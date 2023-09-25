@@ -20,7 +20,7 @@ npm i -g nestjs/cli
 docker-compose up -d
 ```
 
-5. Clonar el archivo __.env.template__ y renombrar la compia a __.env__
+5. Clonar el archivo  ```.env.template``` y renombrar la compia a  ```.env ```
 ```
 http://192.168.0.12:3000/api/seed
 ```
