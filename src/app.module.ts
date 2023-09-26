@@ -7,6 +7,7 @@ import { CommonModule } from './common/common.module';
 import { ConfigModule } from '@nestjs/config';
 import { EnvConfiguration } from './config/app.config';
 import { JoiValidationSchema } from './config/joi.validation';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
@@ -22,7 +23,9 @@ import { JoiValidationSchema } from './config/joi.validation';
 
     PokemonModule,
 
-    CommonModule
+    CommonModule,
+
+    SeedModule
   ],
 })
 export class AppModule { }
