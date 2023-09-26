@@ -19,7 +19,9 @@ import { SeedModule } from './seed/seed.module';
       rootPath: join(__dirname, '..', 'public'),
     }),
 
-    MongooseModule.forRoot(process.env.MONGODB),
+    MongooseModule.forRoot(process.env.MONGODB, {
+      dbName: 'pokemonsdb'
+    }),
 
     PokemonModule,
 
@@ -27,5 +29,6 @@ import { SeedModule } from './seed/seed.module';
 
     SeedModule
   ],
+
 })
 export class AppModule { }
